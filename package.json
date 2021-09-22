@@ -1,23 +1,39 @@
 {
-  "name": "nodejsAPI",
+  "name": "nodejs_testapi",
   "version": "1.0.0",
   "description": "Simple NodeJS API",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/extralink/testapi.git"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "node index.js && mocha --timeout 10000"
   },
   "keywords": [],
   "author": "Rick",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^12.6.6",
+    "chai": "^4.3.4",
     "config": "^3.2.2",
     "debuf": "^1.1.1",
     "debug": "^4.1.1",
     "express": "^4.17.1",
     "git-rev-sync": "^3.0.1",
     "joi": "^17.1.0",
+    "mocha": "^9.1.1",
+    "request": "^2.88.2",
     "ronin-mocks": "^0.1.6",
     "this": "^1.1.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/extralink/testapi/issues"
+  },
+  "homepage": "https://github.com/extralink/testapi#readme",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
 }

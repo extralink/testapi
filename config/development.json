@@ -1,7 +1,4 @@
 {
-    "name": "My Express App-Dev",
-
-    "mail" : {
-        "host": "dev-mail-server"
-    }
+    "name": "nodejsAPI-Dev",
+    "version": "v1.01"
 }

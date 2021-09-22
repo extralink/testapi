@@ -1,7 +1,3 @@
 {
-    "name": "My Express App-Prod",
-
-    "mail" : {
-        "host": "Prod-mail-server"
-    }
+    "name": "nodejsAPI-Prod"
 }
