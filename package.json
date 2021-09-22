@@ -1,0 +1,23 @@
+{
+  "name": "nodejsAPI",
+  "version": "1.0.0",
+  "description": "Simple NodeJS API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rick",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^12.6.6",
+    "config": "^3.2.2",
+    "debuf": "^1.1.1",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "git-rev-sync": "^3.0.1",
+    "joi": "^17.1.0",
+    "ronin-mocks": "^0.1.6",
+    "this": "^1.1.0"
+  }
+}
