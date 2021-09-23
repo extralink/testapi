@@ -22,9 +22,10 @@ npm test        //test the nodejs app
 ```
 Otherwise run the container
 ```
+make dockerClean    //optional to remove previous image.
 make dockerBuild    //if images needs to be rebuilt.
 make dockerRun      //to run the code inside container.
-npm test            //to execute the test cases
+npm test            //to execute the test cases.
 ```
 
 
