@@ -15,28 +15,35 @@ This was built using  VS Code editor
 * Summary of set up
 * Configuration
 Already set, this is containerised, just require docker and a browser
+npm and Makefile are used to streamline the pipeline.
 * Dependencies
-Standard nodejs packages
+Standard nodejs packages and docker
 * How to run tests
-Work in Progress
+Can either run tests against local nodejs or running container
+If running locally  - not inside container
+    npm install
+    npm start
+    npm test
+
+Otherwise run the container
+    make dockerBuild  # if images needs to be rebuilt.
+    make dockerRun  # to run the code inside container.
+    npm test
+
+
 * Deployment instructions
 
-Pull down the latest version. 
-If required, to build the image execute the following docker command from the root directory of this project:
-    docker build   --pull --rm -f "Dockerfile"  --build-arg GIT_COMMIT=$(git rev-parse HEAD) -t testapi:$(git rev-parse HEAD) .
+Make the changes as necessary and retest as outlined above.
 
-To run the docker image execute the following docker commands, first command to grab the [IMAGE ID] for the second command:
-    docker images
-    docker run --name testapi -d -p 8000:8000 [IMAGE ID]
+Execute following to push image
+    make dockerPush
 
 To access the end point, use a browser of your choice with a GET request to:
     http://127.0.0.1:8000/health
 
 ### Contribution guidelines ###
 
-* Limited time, no test cases
-* TBC
-* TBC
+Work in progress
 
 ### Who do I talk to? ###
 

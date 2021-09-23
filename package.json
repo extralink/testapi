@@ -8,8 +8,9 @@
     "url": "git+https://github.com/extralink/testapi.git"
   },
   "scripts": {
+    "install": "npm install",
     "start": "node index.js",
-    "test": "node index.js && mocha --timeout 10000"
+    "test": "mocha --timeout 10000"
   },
   "keywords": [],
   "author": "Rick",
